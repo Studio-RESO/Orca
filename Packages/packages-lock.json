@@ -154,6 +154,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "jp.co.cyberagent.audioconductor": {
+      "version": "https://github.com/CyberAgentGameEntertainment/AudioConductor.git?path=/Packages/AudioConductor",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c6a730d60662fe56505b60b7c1b13d21688add90"
+    },
     "jp.studio-reso.orca": {
       "version": "file:Orca",
       "depth": 0,
