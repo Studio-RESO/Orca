@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace App.Common.Scripts
 {
+    /// <summary>
+    /// GameMode
+    /// 
+    /// </summary>
     public abstract class GameMode
     {
         public GameState GameState { get; internal set; }
-        public PlayerController PlayerController { get; internal set; }
-        public PlayerState PlayerState { get; internal set; }
-        
-        public BaseHUD Hud { get; internal set; }
         
         protected GameMode(Canvas hudRoot)
         {}

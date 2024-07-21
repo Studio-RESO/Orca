@@ -2,11 +2,11 @@ using UnityEngine;
 
 namespace App.Common.Scripts
 {
-    public abstract class BaseHUD
+    public abstract class AbstractHUD
     {
         protected Canvas CanvasRoot { get; set; }
         
-        public BaseHUD(Canvas canvasRoot)
+        public AbstractHUD(Canvas canvasRoot)
         {
             CanvasRoot = canvasRoot;
         }

@@ -8,9 +8,6 @@ namespace App._001_OneShot.Scripts
         public OneShotGameMode(Canvas hudRoot) : base(hudRoot)
         {
             GameState = new OneShotGameState();
-            PlayerState = new OneShotPlayerState();
-            PlayerController = new OneShotPlayerController();
-            Hud = new OneShotHUD(hudRoot);
         }
     }
 }

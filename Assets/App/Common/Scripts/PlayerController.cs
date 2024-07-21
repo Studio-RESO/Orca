@@ -1,7 +1,11 @@
+using System;
+using UnityEngine;
+
 namespace App.Common.Scripts
 {
-    public abstract class PlayerController
+    [Serializable]
+    public class PlayerController
     {
-        
+        public int Id { get; set; }
     }
 }

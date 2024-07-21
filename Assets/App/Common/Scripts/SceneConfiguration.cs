@@ -1,11 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace App.Common.Scripts
 {
     [CreateAssetMenu(fileName = "SceneConfig", menuName = "ScriptableObjects/SceneConfig")]
     public class SceneConfiguration : ScriptableObject
     {
-        public string Id;
-        public string Name;
+        [Header("Common")]
+        [SerializeField] public string sceneId;
+        [SerializeField] public string sceneName;
     }
 }

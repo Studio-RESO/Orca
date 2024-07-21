@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2846d6d0af924137b671a68f1f8b855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneConfig: {fileID: 11400000, guid: d0d6eaad29a8a41fdb517dcc08b78bb6, type: 2}
+  sceneConfig: {fileID: 11400000, guid: cba113d486e460d4aa4fce66dd55a00d, type: 2}
   hudRoot: {fileID: 1825209897}
 --- !u!4 &1111243863
 Transform:

@@ -1,10 +1,11 @@
 using System;
 using App._001_OneShot.Scripts;
 using App.Common.Scripts;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-internal sealed class OneShotScene : BaseScene
+internal sealed class OneShotScene : AbstractScene
 {
     public OneShotScene()
     {
@@ -13,33 +14,22 @@ internal sealed class OneShotScene : BaseScene
     
     private void Awake()
     {
-        Debug.Log($"Player ID : {GameMode.PlayerState.Id}");
-        Debug.Log($"Player Name : {GameMode.PlayerState.Name}");
+        // Debug.Log($"Player ID : {GameMode.PlayerState.Id}");
+        // Debug.Log($"Player Name : {GameMode.PlayerState.Name}");
     }
     
-    protected override void Enter()
+    public override void Open()
     {
-        base.Enter();
+        base.Open();
     }
     
-    protected override void Leave()
+    public override UniTask<bool> Load()
     {
-        base.Leave();
+        throw new NotImplementedException();
     }
     
-    protected override void ApplicationFocus()
+    public override UniTask Unload()
     {
-        base.ApplicationFocus();
-
-    }
-    
-    protected override void ApplicationPause()
-    {
-        base.ApplicationPause();
-    }
-    
-    protected override void ApplicationQuit()
-    {
-        base.ApplicationQuit();
+        throw new NotImplementedException();
     }
 }

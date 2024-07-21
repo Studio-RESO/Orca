@@ -4,17 +4,23 @@ using UnityEngine;
 
 namespace App.Common.Scripts
 {
-    public class ApplicationOperator : IDisposable
+    public class ApplicationOperator : IDisposable, IApplicationProvider
     {
-        public AudioSubsystem AudioSubsystem
-        {
-            get;
-        }
+        public ISceneHandler SceneHandler { get; }
+        
+        public AudioSubsystem AudioSubsystem { get; }
         
         private readonly CompositeDisposable _disposables = new();
         
         public ApplicationOperator(ApplicationConfiguration appConfig)
         {
+            // build environment
+            BuildInfo = new BuildInformation(appConfig.BuildNo, appConfig.BuildKey, appConfig.BuildBranch);
+            
+            // TODO: Sceneの切り替えとロードを実装する。そのためのハンドラが必要。
+            SceneHandler = new SceneHandler(this);
+            
+            // TODO: AudioをSubsystemではなくAudioSystemとして実装する
             AudioSubsystem = new AudioSubsystem();
             AudioSubsystem.Initialize();
         }
@@ -39,5 +45,7 @@ namespace App.Common.Scripts
         {
             _disposables.Dispose();
         }
+        
+        public BuildInformation BuildInfo { get; }
     }
 }
