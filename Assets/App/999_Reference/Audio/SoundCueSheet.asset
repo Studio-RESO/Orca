@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2a166b4c2c548b991995a3cb1b2885, type: 3}
+  m_Name: SoundCueSheet
+  m_EditorClassIdentifier: 
+  cueSheet:
+    id: a1d1ca98-e88c-4b8e-80c6-aae61cbddbbb
+    name: 
+    throttleType: 0
+    throttleLimit: 0
+    volume: 1
+    pitch: 1
+    pitchInvert: 0
+    cueList:
+    - id: dfb77c03-8aac-4cc6-8168-cec2956e1c4c
+      colorId: f05bf714-7ef3-4cc6-971c-7c649f3d499e
+      name: BGM
+      categoryId: 1256549186
+      throttleType: 0
+      throttleLimit: 0
+      volume: 1
+      volumeRange: 0
+      pitch: 1
+      pitchRange: 0
+      pitchInvert: 0
+      playType: 0
+      trackList:
+      - id: 7eae0da3-aa44-48f6-8d8e-936569c19cb2
+        colorId: f05bf714-7ef3-4cc6-971c-7c649f3d499e
+        name: BGM_01
+        audioClip: {fileID: 0}
+        volume: 1
+        volumeRange: 0
+        pitch: 1
+        pitchRange: 0
+        pitchInvert: 0
+        startSample: 0
+        endSample: 0
+        loopStartSample: 0
+        isLoop: 0
+        randomWeight: 0
+        priority: 0
+        fadeTime: 0
