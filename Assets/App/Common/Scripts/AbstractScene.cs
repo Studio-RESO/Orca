@@ -11,7 +11,7 @@ namespace App.Common.Scripts
         
         protected GameMode GameMode { get; set; }
         
-        private IApplicationProvider _provider;
+        protected IApplicationProvider Provider;
         
         public virtual void Open()
         {

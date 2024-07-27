@@ -1,6 +1,6 @@
 ﻿namespace App.Common.Scripts
 {
-    internal interface IApplicationProvider
+    public interface IApplicationProvider
     {
         public BuildInformation BuildInfo { get; }
         

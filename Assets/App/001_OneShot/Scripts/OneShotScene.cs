@@ -16,6 +16,8 @@ internal sealed class OneShotScene : AbstractScene
     {
         // Debug.Log($"Player ID : {GameMode.PlayerState.Id}");
         // Debug.Log($"Player Name : {GameMode.PlayerState.Name}");
+        
+        Debug.Log("OneShotScene : Awake");
     }
     
     public override void Open()
