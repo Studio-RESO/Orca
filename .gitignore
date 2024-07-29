@@ -74,3 +74,11 @@ crashlytics-build.properties
 # Jetbrain Rider Cache
 .idea/
 Assets/Plugins/Editor/JetBrains*
+
+# Audio Files
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.aif
+*.aiff
