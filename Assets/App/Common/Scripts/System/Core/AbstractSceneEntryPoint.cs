@@ -22,9 +22,12 @@ namespace ContextSystem
             
             foreach (var injectable in injectables)
             {
-                injectable.InjectContext<ApplicationContext>(applicationEntryPoint.ApplicationContext);
-                injectable.InjectContext<T>(SceneContext);
+                // injectable.InjectContext<ApplicationContext>(applicationEntryPoint.ApplicationContext);
+                // injectable.InjectContext<T>(SceneContext);
+                InjectContexts(injectable);
             }
         }
+        
+        protected abstract void InjectContexts(ContextInjectableBehaviour injectable);
     }
 }
