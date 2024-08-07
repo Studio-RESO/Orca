@@ -4,9 +4,20 @@ namespace ContextSystem
 {
     public static class ContextInjectableBehaviourFactory
     {
-        public static T Create<T>(T prefab, IContext[] contexts, string name = "") where T : ContextInjectableBehaviour, new()
+        public static T Create<T>(T prefab, Transform parent, IContext[] contexts, string name = "") where T : ContextInjectableBehaviour, new()
         {
-            T component = prefab== null ? new GameObject().AddComponent<T>() : GameObject.Instantiate(prefab);
+            T component;
+
+            if (prefab == null)
+            {
+                var go = new GameObject();
+                go.transform.SetParent(parent);
+                component = go.AddComponent<T>();
+            }
+            else
+            {
+                component = GameObject.Instantiate(prefab, parent);
+            }
 
             if (name.Length > 0) component.name = name;
             
