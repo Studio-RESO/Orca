@@ -22,10 +22,5 @@ namespace ContextSystem
                 injectable.InjectContext<T>(SceneContext);
             }
         }
-
-        protected void OnDestroy()
-        {
-            SceneContext.Dispose();
-        }
     }
 }

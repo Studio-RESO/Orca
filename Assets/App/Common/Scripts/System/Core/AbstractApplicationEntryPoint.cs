@@ -8,10 +8,5 @@ namespace ContextSystem
     public abstract class AbstractApplicationEntryPoint : AbstractEntryPoint
     {
         public ApplicationContext ApplicationContext { get; protected set; }
-        
-        protected void OnDestroy()
-        {
-            ApplicationContext.Dispose();
-        }
     }
 }

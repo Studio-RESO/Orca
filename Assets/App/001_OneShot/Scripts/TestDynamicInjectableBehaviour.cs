@@ -17,6 +17,8 @@ namespace Orca.Example
         
         private ReactiveProperty<int> Score => SceneContext.Score;
         
+        private CompositeDisposable compositeDisposable { get; } = new CompositeDisposable();
+        
         public override void InjectContext<T>(T context)
         {
             if (context is ApplicationContext appContext)
@@ -38,9 +40,14 @@ namespace Orca.Example
             Debug.Log("TestDynamicInjectableBehaviour Awake");
         }
 
+        private void OnDestroy()
+        {
+            compositeDisposable?.Dispose();
+        }
+
         public void Initialize()
         {
-            SceneContext.Score.Subscribe(OnChangeScore);
+            SceneContext.Score.Subscribe(OnChangeScore).AddTo(compositeDisposable);
         }
 
         private void OnChangeScore(int score)

@@ -46,8 +46,6 @@ namespace Orca.Example
             _cancellationToken = new CancellationToken();
             
             button.onClick.AddListener(OnClick);
-
-            
         }
         
         private async void Start()

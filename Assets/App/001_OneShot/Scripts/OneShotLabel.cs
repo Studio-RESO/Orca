@@ -1,3 +1,4 @@
+using System;
 using ContextSystem;
 using TMPro;
 using UnityEngine;
@@ -19,6 +20,8 @@ namespace Orca.Example
         
         private ReactiveProperty<int> Score => SceneContext.Score;
         
+        private CompositeDisposable compositeDisposable { get; } = new CompositeDisposable();
+        
         public override void InjectContext<T>(T context)
         {
             if (context is ApplicationContext appContext)
@@ -37,9 +40,14 @@ namespace Orca.Example
 
         private void Awake()
         {
-            SceneContext.Score.Subscribe(OnChangeScore);
+            SceneContext.Score.Subscribe(OnChangeScore).AddTo(compositeDisposable);
         }
-        
+
+        private void OnDestroy()
+        {
+            compositeDisposable?.Dispose();
+        }
+
         private void OnChangeScore(int score)
         {
             label.text = $"Score : {score}";

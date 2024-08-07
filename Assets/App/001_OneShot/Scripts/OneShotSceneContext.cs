@@ -8,12 +8,5 @@ namespace Orca.Example
         public string SceneName { get; set; }
 
         public ReactiveProperty<int> Score { get; set; } = new ReactiveProperty<int>(0);
-        
-        private CompositeDisposable compositeDisposable;
-        
-        public void Dispose()
-        {
-            compositeDisposable?.Dispose();
-        }
     }
 }
