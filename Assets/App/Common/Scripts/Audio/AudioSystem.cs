@@ -1,4 +1,4 @@
-﻿namespace App.Common.Scripts.Audio
+﻿namespace Orca
 {
     public class AudioSystem
     {

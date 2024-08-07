@@ -1,61 +1,93 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
+using ContextSystem;
+using R3;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace App._001_OneShot.Scripts
+namespace Orca.Example
 {
-    public class OneShotPlayButton : MonoBehaviour
+    internal sealed class OneShotPlayButton : ContextInjectableBehaviour
     {
         [SerializeField] private Button button;
         [SerializeField] private AudioCueSheetAsset audioCueSheetAsset;
         [SerializeField] private AudioCuePlayback audioCuePlayback;
+        [SerializeField] private TestDynamicInjectableBehaviour testDynamicInjectableBehaviour;
         
-        // private OneShotSoundPlayer _player;
-        // private AudioClip _clip;
+        private ApplicationContext ApplicationContext { get; set; }
+        
+        private string AppName => ApplicationContext.AppName;
+        
+        private OneShotSceneContext SceneContext { get; set; }
+
+        private string SceneName => SceneContext.SceneName;
+        
+        private ReactiveProperty<int> Score => SceneContext.Score;
         
         private CancellationToken _cancellationToken;
         
-        protected async void Awake()
+        public override void InjectContext<T>(T context)
         {
-            _cancellationToken = new CancellationToken();
-            
-            // _player = gameObject.AddComponent<OneShotSoundPlayer>();
-            //
-            // var loader = new SoundAssetLoader();
-            // _clip = await loader.LoadFromResourcesAsync("Sound/BGM_01");
-            
-            button.onClick.AddListener(OnClick);
-        }
-        
-        protected async void Start()
-        {
-            bool isLoaded = await audioCuePlayback.Setup(
-                audioCueSheetAsset.audioCueSheet.audioCueList[0],
-                _cancellationToken);
-            
-            if (isLoaded)
+            if (context is ApplicationContext appContext)
             {
-                Debug.Log("AudioCue loaded.");
+                ApplicationContext = appContext;
+            }
+            else if (context is OneShotSceneContext sceneContext)
+            {
+                SceneContext = sceneContext;
             }
             else
             {
-                Debug.LogError("Failed to load AudioCue.");
+                Debug.LogError($"Failed to inject context: {context.GetType().Name}");
             }
+        }
+        
+        private async void Awake()
+        {
+            _cancellationToken = new CancellationToken();
+            
+            button.onClick.AddListener(OnClick);
+
             
         }
         
-        protected void OnDestroy()
+        private async void Start()
+        {
+            // bool isLoaded = await audioCuePlayback.Setup(
+            //     audioCueSheetAsset.audioCueSheet.audioCueList[0],
+            //     _cancellationToken);
+            //
+            // if (isLoaded)
+            // {
+            //     Debug.Log("AudioCue loaded.");
+            // }
+            // else
+            // {
+            //     Debug.LogError("Failed to load AudioCue.");
+            // }
+            
+        }
+        
+        private void OnDestroy()
         {
             button.onClick.RemoveListener(OnClick);
         }
         
         private void OnClick()
         {
-            // Debug.Log(_clip.loadState);
-            // if (_clip) _player.Play(_clip);
+            // 動的に追加したプレハブにContextを注入できるかテスト
+            // TODO: InjectableBehaviourFactoryを実装して、ContextInjectableBehaviourを継承したクラスを生成するようにする。
+            var instantiated = Instantiate(testDynamicInjectableBehaviour);
+            instantiated.InjectContext(ApplicationContext);
+            instantiated.InjectContext(SceneContext);
+            instantiated.Initialize();
             
-            audioCuePlayback.Play();
+            Debug.Log(AppName);
+            Debug.Log(SceneName);
+
+            Score.Value++;
+
+            // audioCuePlayback.Play();
         }
+        
     }
 }
