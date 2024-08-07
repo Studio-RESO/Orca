@@ -72,12 +72,9 @@ namespace Orca.Example
         
         private void OnClick()
         {
-            // 動的に追加したプレハブにContextを注入できるかテスト
-            // TODO: InjectableBehaviourFactoryを実装して、ContextInjectableBehaviourを継承したクラスを生成するようにする。
-            var instantiated = Instantiate(testDynamicInjectableBehaviour);
-            instantiated.InjectContext(ApplicationContext);
-            instantiated.InjectContext(SceneContext);
-            instantiated.Initialize();
+            ContextInjectableFactory
+                .Create(testDynamicInjectableBehaviour, new IContext[] {ApplicationContext, SceneContext})
+                .Initialize();
             
             Debug.Log(AppName);
             Debug.Log(SceneName);

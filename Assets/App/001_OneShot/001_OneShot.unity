@@ -461,7 +461,7 @@ MonoBehaviour:
   button: {fileID: 258476470}
   audioCueSheetAsset: {fileID: 11400000, guid: 87fba9ce6fa878f4c98c487561f21162, type: 2}
   audioCuePlayback: {fileID: 1616929101}
-  testDynamicInjectableBehaviour: {fileID: 833742921042987885, guid: cb3e3e2e5d46c405d91682cd0a7c36a8,
+  testDynamicInjectableBehaviour: {fileID: 5895927497683784801, guid: cb3e3e2e5d46c405d91682cd0a7c36a8,
     type: 3}
 --- !u!1 &349405886
 GameObject:
