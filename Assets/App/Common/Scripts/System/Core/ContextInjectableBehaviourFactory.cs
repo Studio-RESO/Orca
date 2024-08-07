@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ContextSystem
 {
-    public static class ContextInjectableFactory
+    public static class ContextInjectableBehaviourFactory
     {
         public static T Create<T>(T prefab, IContext[] contexts, string name = "") where T : ContextInjectableBehaviour, new()
         {

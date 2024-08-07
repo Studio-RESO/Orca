@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ContextSystem
 {
-    public class AbstractEntryPoint : MonoBehaviour, IEntryPoint
+    public abstract class AbstractEntryPoint : MonoBehaviour, IEntryPoint
     {
         protected IEnumerable<T> GetComponentsByType<T>(FindObjectsSortMode sortMode) where T : MonoBehaviour
         {

@@ -72,7 +72,7 @@ namespace Orca.Example
         
         private void OnClick()
         {
-            ContextInjectableFactory
+            ContextInjectableBehaviourFactory
                 .Create(testDynamicInjectableBehaviour, new IContext[] {ApplicationContext, SceneContext})
                 .Initialize();
             
