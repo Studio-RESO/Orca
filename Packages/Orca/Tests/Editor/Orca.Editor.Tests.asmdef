@@ -1,0 +1,17 @@
+{
+    "name": "Orca.Editor.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1580604c42637984ab530e3a03333e80",
+        "GUID:efae2d1b63df2d54ea4ff25c6ceb82d9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
