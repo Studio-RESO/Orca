@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1329976966	Play_UI_01			\Default Work Unit\Play_UI_01	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	563717793	UI_01	E:\Works\studio-zone\Orca.Wwise\.cache\11\{11010D76-FD0D-332A-7E4E-04DC33E6A0B7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_01		156768
+
