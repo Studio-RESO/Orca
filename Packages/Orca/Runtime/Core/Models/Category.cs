@@ -1,15 +1,15 @@
 using System;
 using UnityEngine.Audio;
 
-namespace Orca
+namespace Orca.Runtime.Core.Models
 {
     [Serializable]
     public class Category
     {
-        public string name;
-        public int id;
-        public AudioMixerGroup mixerGroup;
-        public ThrottleType throttleType = ThrottleType.PriorityOrder;
-        public int throttleLimit = 8;
+        public string Name;
+        public int Id;
+        public AudioMixerGroup MixerGroup;
+        public ThrottleType ThrottleType = ThrottleType.PriorityOrder;
+        public int ThrottleLimit = 8;
     }
 }

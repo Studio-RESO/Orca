@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Orca
+namespace Orca.Runtime.Core
 {
     public class AudioPlaybackobject : MonoBehaviour, IAudioPlayback
     {

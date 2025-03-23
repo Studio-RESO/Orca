@@ -1,4 +1,4 @@
-namespace Orca
+namespace Orca.Runtime.Core
 {
     public interface IAudioPlayback
     {
