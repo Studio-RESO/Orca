@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: db7249e8938a5ff4db5614eb7fae9a3e
   m_currentHash:
     serializedVersion: 2
-    Hash: 1c0112fce60e7164010c5aa2cee867ee
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -53,20 +53,12 @@ MonoBehaviour:
     m_Id: 
   m_RemoteCatalogLoadPath:
     m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
-  - {fileID: 11400000, guid: acf1ea8386ec9d444a9355a34458defe, type: 2}
-  - {fileID: 11400000, guid: 586c99d89bbbc704599840e7d2b808da, type: 2}
-  - {fileID: 11400000, guid: 2f171369b44b8094fa30e57e1ffdf38d, type: 2}
-  - {fileID: 11400000, guid: cfad12bfdd676bb4eb44eb2b4c0c2de2, type: 2}
-  - {fileID: 11400000, guid: bfae6d59fe2f10f4e89652c1eb62bf8b, type: 2}
-  - {fileID: 11400000, guid: 2afc9228718815d4091f84a8c31a1137, type: 2}
-  - {fileID: 11400000, guid: 66a27124c1080cc4989501b56e41b6f5, type: 2}
-  - {fileID: 11400000, guid: c908dea5c2ab8974489ebc45e236594e, type: 2}
   - {fileID: 11400000, guid: 5ec79557351691146b379399ad04a469, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
@@ -114,7 +106,7 @@ MonoBehaviour:
   m_CertificateHandlerType:
     m_AssemblyName: 
     m_ClassName: 
-  m_ActivePlayerDataBuilderIndex: 2
+  m_ActivePlayerDataBuilderIndex: 3
   m_DataBuilders:
   - {fileID: 11400000, guid: 7ac3677c4995d2a46a2c13adc6053ee4, type: 2}
   - {fileID: 11400000, guid: 03416b293cf93f443abbe1499b8ae604, type: 2}
