@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1292829931	Play_SE01			\Default Work Unit\Play_SE01	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	759412030	SE_01	E:\Works\studio-zone\Orca.Wwise\.cache\Web\SFX\ui_5F3B1ADB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_01		49088
+
