@@ -168,7 +168,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 430a470a1c2ca9e448311af4284a19cb,
+    WwiseObjectReference: {fileID: 11400000, guid: 1a794d48fe670463382d7e0ab5586f5e,
       type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
@@ -955,7 +955,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 586cd3348bf435249b7d63756dadb028,
+    WwiseObjectReference: {fileID: 11400000, guid: ea721e0e8f4874e8aa34fc9d50a29656,
       type: 2}
   useCallbacks: 0
   stopSoundOnDestroy: 1
