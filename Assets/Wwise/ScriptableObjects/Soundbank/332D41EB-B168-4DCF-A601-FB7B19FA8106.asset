@@ -15,3 +15,4 @@ MonoBehaviour:
   objectName: SE
   id: 1584861537
   guid: 332D41EB-B168-4DCF-A601-FB7B19FA8106
+  bank: {fileID: 11400000, guid: c6d73bd2180ec4b369316288a40467bd, type: 2}

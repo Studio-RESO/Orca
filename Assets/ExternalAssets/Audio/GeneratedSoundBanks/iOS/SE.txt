@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2301075337	Play_SE_Test_01			\Default Work Unit\Play_SE_Test_01	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	947905900	SE_Test_01	Y:\private\studio-reso\Orca.Wwise\.cache\iOS\SFX\ftol_se_test_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE_Test_01		390064
+

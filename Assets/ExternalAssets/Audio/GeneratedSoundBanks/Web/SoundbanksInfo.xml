@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Web" BasePlatform="Web" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../../../../../../Orca.Wwise</ProjectRoot>
+		<SourceFilesRoot>../../../../../../Orca.Wwise/.cache/Web</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../../../Orca.Wwise/GeneratedSoundBanks/Web</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9AD51C11-AF19-EF16-B981-B8F04CFCFFB6}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="1584861537" Type="User" Language="SFX" Hash="{E33A2CDA-1593-2842-68DD-22C21D719C91}">
+			<ShortName>SE</ShortName>
+			<Path>SE.bnk</Path>
+			<Media>
+				<File Id="947905900" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ftol_se_test.wav</ShortName>
+					<CachePath>SFX/ftol_se_test_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2301075337" Name="Play_SE_Test_01" DurationType="OneShot" DurationMin="2.210703" DurationMax="2.210703">
+					<MediaRefs>
+						<MediaRef Id="947905900"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3F9303F0-AEE4-9C7A-6DB4-71AE113FBA31}</FileHash>
+</SoundBanksInfo>

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using AK.Wwise.Unity.WwiseAddressables;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public sealed class WwiseSampleScene : MonoBehaviour
     [SerializeField] private string[] soundBankNames;
     [SerializeField] private GameObject initAudioListener;
     [SerializeField] private Button seButton;
+    [SerializeField] private WwiseInitBankReference initBankReference;
     
     private readonly Dictionary<string, uint> loadedSoundBanks = new ();
 
@@ -15,6 +17,9 @@ public sealed class WwiseSampleScene : MonoBehaviour
     {
         var initializer = GetComponent<AkInitializer>() ?? gameObject.AddComponent<AkInitializer>();
         initializer.InitializeInitializationSettings();
+
+        var initBankHolder = GetComponent<InitBankHolder>();
+        initBankHolder.InitBank = initBankReference;
 
         var listener = initAudioListener.GetComponent<AkAudioListener>() ?? initAudioListener.AddComponent<AkAudioListener>();
         listener.gameObject.SetActive(true);
