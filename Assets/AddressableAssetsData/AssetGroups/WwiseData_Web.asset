@@ -16,7 +16,7 @@ MonoBehaviour:
   m_GUID: 15eac3c607d0549dfb6b84b9c386b6bc
   m_SerializeEntries:
   - m_GUID: 8092b79c219e04d70b1c5f38f510be14
-    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/Web/SE.bnk
+    m_Address: audio/generatedsoundbanks/se
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -25,3 +25,4 @@ MonoBehaviour:
   m_SchemaSet:
     m_Schemas:
     - {fileID: 11400000, guid: ae4fd8e3f73364ea69da5a173954a421, type: 2}
+    - {fileID: 11400000, guid: c47510c383f51854e92c41de9ea7f699, type: 2}

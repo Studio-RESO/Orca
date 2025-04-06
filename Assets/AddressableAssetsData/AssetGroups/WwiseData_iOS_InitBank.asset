@@ -16,7 +16,7 @@ MonoBehaviour:
   m_GUID: a059e24ce2a00440ca3e71b431cea308
   m_SerializeEntries:
   - m_GUID: e5cc0d88154e1491f832d4cabe790c39
-    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/iOS/Init.bnk
+    m_Address: audio/generatedsoundbanks/init
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -25,3 +25,4 @@ MonoBehaviour:
   m_SchemaSet:
     m_Schemas:
     - {fileID: 11400000, guid: 17e8eaeba0bad407cac917a5a4daa188, type: 2}
+    - {fileID: 11400000, guid: d7be5a752a073cc4ba32061927012e59, type: 2}

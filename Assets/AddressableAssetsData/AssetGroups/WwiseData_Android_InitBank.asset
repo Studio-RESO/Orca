@@ -16,7 +16,7 @@ MonoBehaviour:
   m_GUID: 03e8853033edf4aeab3fe6e82ba7ab38
   m_SerializeEntries:
   - m_GUID: b8ce7b7a48e3e4ae39075c77271dba9f
-    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/Android/Init.bnk
+    m_Address: audio/generatedsoundbanks/init
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -25,3 +25,4 @@ MonoBehaviour:
   m_SchemaSet:
     m_Schemas:
     - {fileID: 11400000, guid: c6af940bb8d4741c8bb2e66a614e2254, type: 2}
+    - {fileID: 11400000, guid: 976264b0486d8eb4389a4e30f2c815b7, type: 2}

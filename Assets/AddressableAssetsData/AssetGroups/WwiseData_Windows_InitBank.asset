@@ -16,7 +16,7 @@ MonoBehaviour:
   m_GUID: c2605736fe59f432a873f80f00d2e2e5
   m_SerializeEntries:
   - m_GUID: e30ebc7cc80c143f193fbd47c39fad33
-    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/Windows/Init.bnk
+    m_Address: audio/generatedsoundbanks/init
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -25,3 +25,4 @@ MonoBehaviour:
   m_SchemaSet:
     m_Schemas:
     - {fileID: 11400000, guid: e2efdef5966c546a0a93d92ca2447a74, type: 2}
+    - {fileID: 11400000, guid: 096e6fa774f1f9e43987b3144fd6d830, type: 2}
