@@ -15,11 +15,11 @@ MonoBehaviour:
   m_DefaultGroup: db7249e8938a5ff4db5614eb7fae9a3e
   m_currentHash:
     serializedVersion: 2
-    Hash: 8ad9ab1732a7a5d1ae34e31ddebf434e
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_CatalogRequestsTimeout: 0
-  m_DisableCatalogUpdateOnStart: 1
+  m_DisableCatalogUpdateOnStart: 0
   m_InternalIdNamingMode: 0
   m_InternalBundleIdMode: 1
   m_AssetLoadMode: 0
@@ -50,14 +50,14 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: b68fd1a10aaa784479e73e31d149dcde
+    m_Id: b79dc681e9f2a194a8d3eae9f416e121
   m_RemoteCatalogLoadPath:
-    m_Id: 08523593c4c769a468cd9993fc402992
+    m_Id: 5a5c0a84500cb15418ecb9373360a128
   m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 1
-  m_overridePlayerVersion: 0.0.0
+  m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
   - {fileID: 11400000, guid: 7964557364cee48fa8b24f8bd5b6c5aa, type: 2}
   - {fileID: 11400000, guid: aed785b436cd14af594c00fa4014c34d, type: 2}
@@ -69,6 +69,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 62d9015e7a7ad48a7ac1b8c059db8bc6, type: 2}
   - {fileID: 11400000, guid: 4e442f40b04f1433791d8cc917643489, type: 2}
   - {fileID: 11400000, guid: b2a5e69a83a4642bc825db31f7c9c0de, type: 2}
+  - {fileID: 11400000, guid: 9b64337c8edde4ed49b4f882881bd0ee, type: 2}
   - {fileID: 11400000, guid: 5ec79557351691146b379399ad04a469, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
@@ -84,11 +85,11 @@ MonoBehaviour:
       - m_Id: 43098fcdf13a8704e9dcfd62dcdd9fb6
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: 5a5c0a84500cb15418ecb9373360a128
-        m_Value: <undefined>
+        m_Value: http://localhost:3000
       - m_Id: b68fd1a10aaa784479e73e31d149dcde
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: b79dc681e9f2a194a8d3eae9f416e121
-        m_Value: ServerData/win
+        m_Value: builds/aa
     m_ProfileEntryNames:
     - m_Id: 08523593c4c769a468cd9993fc402992
       m_Name: Local.LoadPath
@@ -109,6 +110,12 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - prefabs/cube
+    - wwise/windows
+    - wwise/mac
+    - wwise/ios
+    - wwise/android
+    - wise/web
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 859046d8a8cbbbb4cb9a12472bb33385, type: 2}

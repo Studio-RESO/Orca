@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: WwiseData_Android_InitBank
+  m_Name: prefabs
   m_EditorClassIdentifier: 
-  m_GroupName: WwiseData_Android_InitBank
-  m_GUID: 03e8853033edf4aeab3fe6e82ba7ab38
+  m_GroupName: prefabs
+  m_GUID: d04ac4054e46a4776b3a5c21dc73f31e
   m_SerializeEntries:
-  - m_GUID: b8ce7b7a48e3e4ae39075c77271dba9f
-    m_Address: audio/generatedsoundbanks/android/init
+  - m_GUID: 8d9635184e598448da73bcf2c80efddd
+    m_Address: prefabs/cube
     m_ReadOnly: 0
     m_SerializedLabels:
-    - wwise/android
+    - prefabs/cube
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: c6af940bb8d4741c8bb2e66a614e2254, type: 2}
-    - {fileID: 11400000, guid: 976264b0486d8eb4389a4e30f2c815b7, type: 2}
+    - {fileID: 11400000, guid: d4f796ace018a48068a1216357c7d878, type: 2}
+    - {fileID: 11400000, guid: 3b7f89ecab51a4bbabca77e3499ee0ff, type: 2}

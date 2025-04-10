@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using AK.Wwise.Unity.WwiseAddressables;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
 
 public sealed class WwiseSampleScene : MonoBehaviour
@@ -9,24 +11,33 @@ public sealed class WwiseSampleScene : MonoBehaviour
     [SerializeField] private string[] soundBankNames;
     [SerializeField] private GameObject initAudioListener;
     [SerializeField] private Button seButton;
-    [SerializeField] private WwiseInitBankReference initBankReference;
     
     private readonly Dictionary<string, uint> loadedSoundBanks = new ();
 
     private void Awake()
     {
-        var initializer = GetComponent<AkInitializer>() ?? gameObject.AddComponent<AkInitializer>();
-        initializer.InitializeInitializationSettings();
-
-        var initBankHolder = GetComponent<InitBankHolder>();
-        initBankHolder.InitBank = initBankReference;
+        // var initializer = GetComponent<AkInitializer>() ?? gameObject.AddComponent<AkInitializer>();
+        // initializer.InitializeInitializationSettings();
 
         var listener = initAudioListener.GetComponent<AkAudioListener>() ?? initAudioListener.AddComponent<AkAudioListener>();
         listener.gameObject.SetActive(true);
     }
 
-    private void Start()
+    private async void Start()
     {
+        Addressables.LoadResourceLocationsAsync("prefabs/cube").Completed += async handle =>
+        {
+            foreach (var loc in handle.Result)
+            {
+                Debug.Log($"-------------------------------------------------------");
+                Debug.Log($"status = {handle.Status}");
+                Debug.Log($"InternalId = {loc.InternalId}");
+                
+                var size = await Addressables.GetDownloadSizeAsync("prefabs/cube").ToUniTask();
+                Debug.Log($"Need to download {size} bytes");
+            }
+        };
+        
         LoadAllSoundBanks();
         
         seButton.onClick.AddListener(OnClickedSeButton);
@@ -52,7 +63,7 @@ public sealed class WwiseSampleScene : MonoBehaviour
     /// </summary>
     public void LoadAllSoundBanks()
     {
-        foreach (string bankName in soundBankNames)
+        foreach (var bankName in soundBankNames)
         {
             LoadSoundBank(bankName);
         }

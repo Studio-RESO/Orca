@@ -16,9 +16,10 @@ MonoBehaviour:
   m_GUID: 34d3bae73a94349aeb84e60087550cfe
   m_SerializeEntries:
   - m_GUID: 72a4ab7c85c8149a68018561dc162190
-    m_Address: audio/generatedsoundbanks/se
+    m_Address: audio/generatedsoundbanks/android/se
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - wwise/android
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}

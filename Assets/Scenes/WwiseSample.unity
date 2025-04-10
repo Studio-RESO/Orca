@@ -167,7 +167,6 @@ MonoBehaviour:
   - SE
   initAudioListener: {fileID: 1343523009}
   seButton: {fileID: 1484375620}
-  initBankReference: {fileID: 11400000, guid: 54aea8483edbb4a778b1752bcc76ecc8, type: 2}
 --- !u!1 &960251355
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,9 +16,10 @@ MonoBehaviour:
   m_GUID: a059e24ce2a00440ca3e71b431cea308
   m_SerializeEntries:
   - m_GUID: e5cc0d88154e1491f832d4cabe790c39
-    m_Address: audio/generatedsoundbanks/init
+    m_Address: audio/generatedsoundbanks/ios/init
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - wwise/ios
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}

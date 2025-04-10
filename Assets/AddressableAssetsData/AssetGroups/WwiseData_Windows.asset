@@ -16,9 +16,10 @@ MonoBehaviour:
   m_GUID: 84a399f9f2e914f11817e6591cfe7975
   m_SerializeEntries:
   - m_GUID: 0bc160f6ccf1445a2bc922e9dbf0aa51
-    m_Address: audio/generatedsoundbanks/se
+    m_Address: audio/generatedsoundbanks/windows/se
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - wwise/windows
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}
