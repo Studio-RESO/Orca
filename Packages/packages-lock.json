@@ -1,13 +1,12 @@
 {
   "dependencies": {
     "com.audiokinetic.wwise.addressables": {
-      "version": "https://github.com/audiokinetic/WwiseUnityAddressables.git#23.1.7",
+      "version": "file:../PackageSource/com.audiokinetic.wwise.addressables@4339bf2a8668",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.unity.addressables": "1.21.20"
-      },
-      "hash": "4339bf2a8668c71fbbca7bb2e03a4fe79bff8784"
+      }
     },
     "com.cysharp.unitask": {
       "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
@@ -15,6 +14,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "cdf88c6a6ac8c9b7e6e5d3c0a360a4af29641c24"
+    },
+    "com.cysharp.yetanotherhttphandler": {
+      "version": "https://github.com/Cysharp/YetAnotherHttpHandler.git?path=src/YetAnotherHttpHandler#1.10.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "0eede4bf5bbbf7d6eb9cb63739c05bd69a6beaba"
     },
     "com.studio-reso.asteria": {
       "version": "git+ssh://git@github.com/Studio-RESO/Asteria.git?path=/Packages/Asteria",
@@ -305,8 +311,8 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.buffers": {
-      "version": "4.5.1",
-      "depth": 1,
+      "version": "4.6.1",
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
@@ -316,6 +322,17 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://unitynuget-registry.openupm.com"
+    },
+    "org.nuget.system.io.pipelines": {
+      "version": "9.0.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.buffers": "4.5.1",
+        "org.nuget.system.memory": "4.5.5",
+        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+      },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.memory": {
@@ -354,7 +371,7 @@
     },
     "org.nuget.system.threading.tasks.extensions": {
       "version": "4.5.4",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.runtime.compilerservices.unsafe": "4.5.3"

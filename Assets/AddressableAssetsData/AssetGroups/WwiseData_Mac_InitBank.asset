@@ -13,17 +13,15 @@ MonoBehaviour:
   m_Name: WwiseData_Mac_InitBank
   m_EditorClassIdentifier: 
   m_GroupName: WwiseData_Mac_InitBank
-  m_GUID: 9a1da24818a594f6aa81ee7fcb490b4c
+  m_GUID: 3e4d16baf0e8742f5bfaa5f09b51700e
   m_SerializeEntries:
   - m_GUID: 023182f9751b145e591b4aaa684f0b2d
-    m_Address: audio/generatedsoundbanks/mac/init
+    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/Mac/Init.bnk
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - wwise/mac
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 9dbfdd5c767804642920b4fa37663df8, type: 2}
-    - {fileID: 11400000, guid: d8d875745272ca14d9b877326654957a, type: 2}
+    - {fileID: 11400000, guid: da9fecec7d1584308b420036146e7d0d, type: 2}

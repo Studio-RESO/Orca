@@ -13,17 +13,15 @@ MonoBehaviour:
   m_Name: WwiseData_Windows_InitBank
   m_EditorClassIdentifier: 
   m_GroupName: WwiseData_Windows_InitBank
-  m_GUID: c2605736fe59f432a873f80f00d2e2e5
+  m_GUID: 8967cc4dcb47b476a895664b7bb81530
   m_SerializeEntries:
   - m_GUID: e30ebc7cc80c143f193fbd47c39fad33
-    m_Address: audio/generatedsoundbanks/windows/init
+    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/Windows/Init.bnk
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - wwise/windows
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: e2efdef5966c546a0a93d92ca2447a74, type: 2}
-    - {fileID: 11400000, guid: 096e6fa774f1f9e43987b3144fd6d830, type: 2}
+    - {fileID: 11400000, guid: 57c3d4ac9029c4fa4af4a1587ad0a061, type: 2}

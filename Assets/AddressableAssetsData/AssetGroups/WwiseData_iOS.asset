@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: WwiseData_iOS
   m_EditorClassIdentifier: 
   m_GroupName: WwiseData_iOS
-  m_GUID: a39f81c92ee3744e389cbab525a6debc
+  m_GUID: 17ec6c9feaff54948b14e6c9c51b9663
   m_SerializeEntries:
   - m_GUID: 3f6ab1ea25284425ca6d9eae013a3921
-    m_Address: audio/generatedsoundbanks/ios/se
+    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/iOS/SE.bnk
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - wwise/ios
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 431a38c6282dd4f4faf799b60ec060d5, type: 2}
-    - {fileID: 11400000, guid: 798a61ff9fa99ad4ba2125375c870300, type: 2}
+    - {fileID: 11400000, guid: fd9e519e8643e4cc7a8750fde8738b3e, type: 2}
+    - {fileID: 11400000, guid: b3582af47ba2e48c6887e533be5155f9, type: 2}

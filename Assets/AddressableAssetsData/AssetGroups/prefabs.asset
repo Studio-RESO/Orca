@@ -15,11 +15,21 @@ MonoBehaviour:
   m_GroupName: prefabs
   m_GUID: d04ac4054e46a4776b3a5c21dc73f31e
   m_SerializeEntries:
+  - m_GUID: 1305fc749f7564a31801671951cc60a8
+    m_Address: prefabs/event
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8d9635184e598448da73bcf2c80efddd
     m_Address: prefabs/cube
     m_ReadOnly: 0
     m_SerializedLabels:
     - prefabs/cube
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f73cd784b0684931a9a6c788f28bcf2
+    m_Address: prefabs/bank
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}

@@ -13,17 +13,15 @@ MonoBehaviour:
   m_Name: WwiseData_Android_InitBank
   m_EditorClassIdentifier: 
   m_GroupName: WwiseData_Android_InitBank
-  m_GUID: 03e8853033edf4aeab3fe6e82ba7ab38
+  m_GUID: 4c16216e5274b43358f777f39e384e4c
   m_SerializeEntries:
   - m_GUID: b8ce7b7a48e3e4ae39075c77271dba9f
-    m_Address: audio/generatedsoundbanks/android/init
+    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/Android/Init.bnk
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - wwise/android
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: c6af940bb8d4741c8bb2e66a614e2254, type: 2}
-    - {fileID: 11400000, guid: 976264b0486d8eb4389a4e30f2c815b7, type: 2}
+    - {fileID: 11400000, guid: b4e85abd3e8a843bb88b5407da3e860d, type: 2}

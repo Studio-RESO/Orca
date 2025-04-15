@@ -1,0 +1,24 @@
+{
+  "name": "com.audiokinetic.wwise.addressables",
+  "version": "2023.1.6",
+  "displayName": "Wwise Unity Addressables",
+  "description": "Wwise Unity Addressables",
+  "unity": "2021.3",
+  "unityRelease": "32f1",
+  "dependencies": {
+    "com.unity.addressables": "1.21.20"
+  },
+  "keywords": [
+    "Wwise",
+    "wwise",
+    "audiokinetic",
+    "ak",
+    "Audiokinetic"
+  ],
+  "author": {
+    "name": "Audiokinetic Inc.",
+    "email": "info@audiokinetic.com",
+    "url": "https://www.audiokinetic.com"
+  },
+  "_fingerprint": "4339bf2a8668c71fbbca7bb2e03a4fe79bff8784"
+}

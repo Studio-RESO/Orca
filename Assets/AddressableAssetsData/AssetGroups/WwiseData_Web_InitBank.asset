@@ -13,17 +13,15 @@ MonoBehaviour:
   m_Name: WwiseData_Web_InitBank
   m_EditorClassIdentifier: 
   m_GroupName: WwiseData_Web_InitBank
-  m_GUID: 7daa2d9dac588460eb6ae0d6fd12f182
+  m_GUID: 648860efc50ca40d9b6e0d0720aa9261
   m_SerializeEntries:
   - m_GUID: e0eb6841c5bbf4f11b341c86d48bd0d5
-    m_Address: audio/generatedsoundbanks/web/init
+    m_Address: Assets/ExternalAssets/Audio/GeneratedSoundBanks/Web/Init.bnk
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - wise/web
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5424e3ea5b5c0204ab9580201348b1e1, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 6ec2d5354476a43f99812fb37560a91e, type: 2}
-    - {fileID: 11400000, guid: 73ffcfaa07cf2c448980a52788f55421, type: 2}
+    - {fileID: 11400000, guid: 09d362dfd108341c286ec5eab6812a48, type: 2}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
   m_Name: WwiseData_Android_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 9b33a95bd656f4762b58391e292ee32d, type: 2}
+  m_Group: {fileID: 11400000, guid: 2571f60be08484f4d83d15d9f9260143, type: 2}
   m_StaticContent: 0

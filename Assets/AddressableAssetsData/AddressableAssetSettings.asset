@@ -18,6 +18,7 @@ MonoBehaviour:
     Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
+  m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
   m_InternalIdNamingMode: 0
@@ -31,7 +32,7 @@ MonoBehaviour:
     m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider
   m_IgnoreUnsupportedFilesInBuild: 0
   m_UniqueBundleIds: 0
-  m_EnableJsonCatalog: 0
+  m_EnableJsonCatalog: 1
   m_NonRecursiveBuilding: 1
   m_CCDEnabled: 0
   m_maxConcurrentWebRequests: 3
@@ -53,24 +54,25 @@ MonoBehaviour:
     m_Id: b79dc681e9f2a194a8d3eae9f416e121
   m_RemoteCatalogLoadPath:
     m_Id: 5a5c0a84500cb15418ecb9373360a128
-  m_ContentStateBuildPathProfileVariableName: <default settings path>
+  m_ContentStateBuildPathProfileVariableName: Remote.BuildPath
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 1
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
-  - {fileID: 11400000, guid: 7964557364cee48fa8b24f8bd5b6c5aa, type: 2}
-  - {fileID: 11400000, guid: aed785b436cd14af594c00fa4014c34d, type: 2}
-  - {fileID: 11400000, guid: 9b33a95bd656f4762b58391e292ee32d, type: 2}
-  - {fileID: 11400000, guid: b498344d5f3744f55836722da862241a, type: 2}
-  - {fileID: 11400000, guid: 455d2a12c1e684e779e1f8d14a528d78, type: 2}
-  - {fileID: 11400000, guid: 0a4d253f918b4498b9fe74d29359da27, type: 2}
-  - {fileID: 11400000, guid: 2db7ae9fa88fe4d439a2a2e3d65fb561, type: 2}
-  - {fileID: 11400000, guid: 62d9015e7a7ad48a7ac1b8c059db8bc6, type: 2}
-  - {fileID: 11400000, guid: 4e442f40b04f1433791d8cc917643489, type: 2}
-  - {fileID: 11400000, guid: b2a5e69a83a4642bc825db31f7c9c0de, type: 2}
+  - {fileID: 11400000, guid: ae1e83b4a94a54870871f5adea2fdc85, type: 2}
+  - {fileID: 11400000, guid: 2eb933c5c9a1f4117824be1e763cbf78, type: 2}
+  - {fileID: 11400000, guid: 306b68dd21c6d4074b40c5c3ad233063, type: 2}
+  - {fileID: 11400000, guid: 9a89c4f80b7b24a76b81b04deba3af7a, type: 2}
+  - {fileID: 11400000, guid: 6f69794aca2864378adc6a2fa3f09a8d, type: 2}
+  - {fileID: 11400000, guid: 1dce665cfd2c04335b364c9c2bb16c26, type: 2}
+  - {fileID: 11400000, guid: 430989d7d8e51421e8387f6aac15573a, type: 2}
+  - {fileID: 11400000, guid: 9a58d509d066c4933958d5b9ed385b78, type: 2}
+  - {fileID: 11400000, guid: 2571f60be08484f4d83d15d9f9260143, type: 2}
   - {fileID: 11400000, guid: 9b64337c8edde4ed49b4f882881bd0ee, type: 2}
+  - {fileID: 11400000, guid: bc84eac690bca48f4a00716c59214a9b, type: 2}
   - {fileID: 11400000, guid: 5ec79557351691146b379399ad04a469, type: 2}
+  - {fileID: 11400000, guid: 97bf9688f11f749a48fb9b613f5da6ed, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
     m_BundleBuildPath: Temp/com.unity.addressables/AssetBundles
@@ -109,13 +111,8 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - default
     - prefabs/cube
-    - wwise/windows
-    - wwise/mac
-    - wwise/ios
-    - wwise/android
-    - wise/web
+    - audio/wwise
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 859046d8a8cbbbb4cb9a12472bb33385, type: 2}
@@ -123,9 +120,10 @@ MonoBehaviour:
   m_CertificateHandlerType:
     m_AssemblyName: 
     m_ClassName: 
-  m_ActivePlayerDataBuilderIndex: 2
+  m_ActivePlayerDataBuilderIndex: 3
   m_DataBuilders:
   - {fileID: 11400000, guid: 7ac3677c4995d2a46a2c13adc6053ee4, type: 2}
   - {fileID: 11400000, guid: 03416b293cf93f443abbe1499b8ae604, type: 2}
   - {fileID: 11400000, guid: 742f5c985139c6b4cb4afcb31e0892d2, type: 2}
+  - {fileID: 11400000, guid: f04b7d3c5ba21cc4cbc6970f520072f3, type: 2}
   m_ActiveProfileId: 05e4d07b4a286684d87cc7dd07d7bf10
