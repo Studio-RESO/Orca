@@ -19,8 +19,19 @@ namespace Orca.Example
 
         private async void Awake()
         {
-            var wwiseSettings = new AkInitializationSettings();
-            AkSoundEngine.Init(wwiseSettings);
+            // NOTE: Wwiseの初期化
+            AkSoundEngine.Init(new AkInitializationSettings());
+            
+            // NOTE: これがないとWwise Profilerと接続できない
+            AkSoundEngine.InitCommunication(new AkCommunicationSettings());
+            
+            // NOTE: 一応Unityのログ側でもモニタできる環境を作る
+            AkCallbackManager.Init(new AkCallbackManager.InitializationSettings());
+            AkCallbackManager.SetMonitoringCallback(AkMonitorErrorLevel.ErrorLevel_All,
+                    (code, level, id, objID, msg) =>
+                    {
+                        Debug.LogWarning($"[Wwise Monitor] {level} {code} : {msg} --- id={id} objID={objID}");
+                    });
             
             assetService = new AssetService("http://localhost:3000/", "catalog_0.1.0.json"); 
             isInitialized = await assetService.InitializeAsync(cancellationTokenSource.Token);
@@ -82,7 +93,7 @@ namespace Orca.Example
 
         private void OnClickedSeButton()
         {
-            var playingId = AkSoundEngine.PostEvent("Play_SE_Test_01", seButton.gameObject);
+            var playingId = AkSoundEngine.PostEvent("Play_SE_Test_01", gameObject);
             if (playingId == AkSoundEngine.AK_INVALID_PLAYING_ID)
             {
                 Debug.LogError("PostEvent failed!");
