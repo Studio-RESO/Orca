@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using AK.Wwise.Unity.WwiseAddressables;
@@ -89,6 +90,22 @@ namespace Orca.Example
             {
                 Destroy(initAudioListener.GetComponent<AkAudioListener>());
             }
+            
+            AkSoundEngine.Term();
+        }
+
+        private void LateUpdate()
+        {
+            AkRoomManager.Update();
+            AkRoomAwareManager.UpdateRoomAwareObjects();
+            AkCallbackManager.PostCallbacks();
+#if !(AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES)
+            AkBankManager.DoUnloadBanks();
+#endif
+#if UNITY_WEBGL && !UNITY_EDITOR
+		AkSoundEngine.PerformStreamMgrIO();
+#endif
+            AkSoundEngine.RenderAudio();
         }
 
         private void OnClickedSeButton()
