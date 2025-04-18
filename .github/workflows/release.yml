@@ -27,7 +27,7 @@ jobs:
           lfs: true
       # Cache
       - name: Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: Library
           key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
@@ -46,7 +46,7 @@ jobs:
           targetPlatform: StandaloneWindows64
           buildMethod: ${{ env.BUILD_METHOD }}
           versioning: None
-          unityVersion: 2022.3.33f1
+          unityVersion: 6000.0.44f1
       # Check .meta
       - name: Check all .meta is commited
         run: |

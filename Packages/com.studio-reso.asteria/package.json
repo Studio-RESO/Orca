@@ -1,0 +1,13 @@
+{
+    "name": "com.studio-reso.asteria",
+    "version": "0.0.1",
+    "displayName": "Asteria",
+    "unity": "2022.3",
+    "license": "MIT",
+    "keywords": [
+        "addressable"
+    ],
+    "dependencies": {
+        "com.unity.addressables": "2.3.16"
+    }
+}

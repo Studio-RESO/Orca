@@ -1,0 +1,19 @@
+{
+    "name": "Asteria.Editor.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8f6cd89d545797d41923051c8ea85d8e",
+        "GUID:d057974e3f3c2a24cb2feefc2b9ee3c2"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
