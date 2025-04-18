@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de839beee86911742857f72efd4e4d40, type: 3}
+  m_Name: C040CF9B-1CE4-43CE-BF65-92CEFFEB4E80
+  m_EditorClassIdentifier: 
+  objectName: Play_SE01
+  id: 1292829931
+  guid: C040CF9B-1CE4-43CE-BF65-92CEFFEB4E80

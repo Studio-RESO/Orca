@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../../../../../../Orca.Wwise</ProjectRoot>
+		<SourceFilesRoot>../../../../../../Orca.Wwise/.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../../../Orca.Wwise/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="1584861537" Type="User" Language="SFX" Hash="{E3D0487E-C842-270A-E6FE-34A692F299AC}">
+			<ShortName>SE</ShortName>
+			<Path>SE.bnk</Path>
+			<Media>
+				<File Id="759412030" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ui.wav</ShortName>
+					<CachePath>SFX/ui_5F3B1ADB.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1292829931" Name="Play_SE01" DurationType="OneShot" DurationMin="0.25518212" DurationMax="0.25518212">
+					<MediaRefs>
+						<MediaRef Id="759412030"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{7416104D-609C-BF60-DACE-5F14F5E00506}</FileHash>
+</SoundBanksInfo>
