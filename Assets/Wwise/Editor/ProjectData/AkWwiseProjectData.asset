@@ -66,10 +66,24 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d84b7fe7b80f0c42a08194524a04173a
     GuidInternal: 
-    m_lastTime: -8584579263919349522
+    m_lastTime: -8584565286272385622
     List:
+    - name: BGM
+      guid: dbff085c50c84a4091d72aff3c07fa94
+      id: 412724365
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d84b7fe7b80f0c42a08194524a04173a
+      - ElementName: BGM
+        ObjectType: 7
+        guid: dbff085c50c84a4091d72aff3c07fa94
+      Path: SoundBanks\Default Work Unit\BGM
     - name: SE
-      guid: 6eb20bdf52434f46a8dcc919201ee927
+      guid: eb412d3368b1cf4da601fb7b19fa8106
       id: 1584861537
       PathAndIcons:
       - ElementName: SoundBanks
@@ -80,7 +94,7 @@ MonoBehaviour:
         guid: d84b7fe7b80f0c42a08194524a04173a
       - ElementName: SE
         ObjectType: 7
-        guid: 6eb20bdf52434f46a8dcc919201ee927
+        guid: eb412d3368b1cf4da601fb7b19fa8106
       Path: SoundBanks\Default Work Unit\SE
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -94,11 +108,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8d2d6159ac5c4e4d81e44b93558aa92b
     GuidInternal: 
-    m_lastTime: -8584579264035153555
+    m_lastTime: -8584565287002421221
     List:
-    - name: Play_SE01
-      guid: 9bcf40c0e41cce43bf6592ceffeb4e80
-      id: 1292829931
+    - name: Play_BGM_Test_01
+      guid: 8b4c41760e3d924f974cf5da7186af74
+      id: 935863287
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -106,13 +120,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 8d2d6159ac5c4e4d81e44b93558aa92b
-      - ElementName: Play_SE01
+      - ElementName: Play_BGM_Test_01
         ObjectType: 3
-        guid: 9bcf40c0e41cce43bf6592ceffeb4e80
-      Path: Events\Default Work Unit\Play_SE01
+        guid: 8b4c41760e3d924f974cf5da7186af74
+      Path: Events\Default Work Unit\Play_BGM_Test_01
       maxAttenuation: 0
-      maxDuration: 0.25518212
-      minDuration: 0.25518212
+      maxDuration: 107.92196
+      minDuration: 107.92196
+    - name: Play_SE_Test_01
+      guid: 51f520bb60412d4f9ded47a31188a913
+      id: 2301075337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2d6159ac5c4e4d81e44b93558aa92b
+      - ElementName: Play_SE_Test_01
+        ObjectType: 3
+        guid: 51f520bb60412d4f9ded47a31188a913
+      Path: Events\Default Work Unit\Play_SE_Test_01
+      maxAttenuation: 0
+      maxDuration: 2.210703
+      minDuration: 2.210703
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +201,7 @@ MonoBehaviour:
     m_lastTime: -8584579303400134561
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000b0000000c000000
+  ExpandedWaapiItemIds: 03000000040000000600000007000000090000000b0000000c0000000d0000000f000000110000001300000015000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
